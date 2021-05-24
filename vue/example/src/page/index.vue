@@ -99,7 +99,7 @@
 </template>
 
 <script>
-import { DataMapping } from '../../../index';
+import { DataMapping } from '../../../src/index';
 import * as SingleNoHeaderData from './mock_data/single-no-header';
 import * as SingleWithHeaderData from './mock_data/single-with-header';
 import * as MutiplyMappingData from './mock_data/mutiply-mapping';
