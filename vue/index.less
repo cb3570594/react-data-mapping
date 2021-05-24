@@ -1,0 +1,97 @@
+@import './static/iconfont.css';
+* {
+  box-sizing: border-box;
+}
+.butterfly-data-mapping {
+  position: relative;
+  height: 500px;
+  width: 550px;
+  min-height: 200px;
+  min-width: 200px;
+  .table-node {
+    position: absolute;
+    border: 1px solid #595959;
+    color: #fff;
+    border-radius: 5px;
+    .title {
+      background: rgba(255, 255, 255, 0.15);
+      padding-left: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .filed-title{
+      background: #1d1d1d;
+      .filed-title-item{
+        display: inline-block;
+        text-align: center;
+      }
+    }
+    .field {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        background: rgba(255, 255, 255, 0.06);
+      }
+      &.link {
+        background: rgba(255,255,255,0.12);
+      }
+      &.focus {
+        background: #F66902;
+      }
+      .field-sort {
+        overflow: hidden;
+        display: inline-block;
+        .move-up, .move-down {
+          font-size: 14px;
+        }
+      }
+      .field-item {
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 4px;
+      }
+      .point {
+        position: absolute;
+        &.left-point {
+          top: 50%;
+          left: 0;
+        }
+        &.right-point{
+          top: 50%;
+          right: 0;
+        }
+      }
+    }
+    .no-data {
+      margin: 10px 0;
+      color: #474747;
+      text-align: center;
+      .no-data-icon {
+        font-size: 36px;
+      }
+    }
+  }
+  .butterflies-link {
+    &.focus {
+      stroke: #F66902;
+    }
+  }
+  .butterflies-arrow {
+    &.focus {
+      fill: #F66902;
+      stroke: #F66902;
+    }
+    &:hover {
+      stroke: #BFBFBF;
+      fill: #BFBFBF;
+    }
+  }
+}
