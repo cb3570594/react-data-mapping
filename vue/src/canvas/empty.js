@@ -22,7 +22,6 @@ export default (config) => {
   let emptyDom = '<div style="width: ' + width + '"></div>';
 
   if (content) {
-    console.log(typeof content)
     if (typeof content === 'function') {
       const vueCon = Vue.extend({
         render: content,
@@ -39,6 +38,5 @@ export default (config) => {
   
     emptyDom.append(iconDom);
   }
-  console.log(emptyDom)
   return emptyDom;
 };
